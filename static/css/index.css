@@ -1,0 +1,49 @@
+       background-size: cover;
+
+        border-radius: 15px;
+
+        padding: 5px;
+        height: 15vw;
+        width: 30vw;
+        top: 15%;
+}
+
+#uname {
+        width: 20%;
+        height: 10%;
+        bottom: 15%;
+        text-align: center;
+        font-size: 2vw;
+}
+
+#playbtn {
+        width: 10%;
+        bottom: 5%;
+        text-align: center;
+
+        font-size: 2vw;
+}
+
+#unamelbl {
+        bottom: 27.5%;
+}
+
+#discLink {
+        padding: 5px;
+        left: 0px;
+        bottom: 0px;
+
+        text-align: center;
+
+        color: #7289DA;
+}
+
+#discBox {
+        padding: 5px;
+        left: 5px;
+        top: 5px;
+        width: 10%;
+        height: 10%;
+
+        font-size: 1vw;
+}
