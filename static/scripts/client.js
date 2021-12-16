@@ -35,9 +35,17 @@ function setServerMsg(msg) {
 	document.getElementById("content").innerHTML = msg;
 }
 
+function util_gethost() {
+	if window.location.protocol.includes("file") {
+		return "https://localhost:8443";
+	} else {
+		return window.location.protocol + "//" + window.location.host + ":8443";
+	}
+}
+
 setServerMsg("Connecting...");
 
-var socket = io(window.location.protocol + "//" + window.location.host + ":8443");
+var socket = io(util_gethost());
 const fpPromise = FingerprintJS.load({token: 'eY9P56O5Kymn7GZ7Fuyy', endpoint: 'https://auth.coresdev.ml'})
 
     // Get the visitor identifier when you need it.
