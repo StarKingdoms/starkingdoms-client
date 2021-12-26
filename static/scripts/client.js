@@ -46,19 +46,8 @@ function util_gethost() {
 setServerMsg("Connecting...");
 
 var socket = io(util_gethost());
-const fpPromise = FingerprintJS.load({token: 'eY9P56O5Kymn7GZ7Fuyy', endpoint: 'https://auth.coresdev.ml'})
 
-    // Get the visitor identifier when you need it.
-    fpPromise
-      .then(fp => fp.get())
-      .then(result => {
-        // This is the visitor identifier:
-        vid = result.visitorId;
-	socket.emit("join", username, vid);
-        console.log("%cLogging in with fingerprint " + vid, "color: yellow");
-      });
-
-var failConn = setTimeout(function() {
+/*var failConn = setTimeout(function() {
         socket.disconnect();
 	var id = window.setTimeout(function() {}, 0);
 
@@ -67,9 +56,10 @@ while (id--) {
 }
 	console.log("Connection aborted after 10 seconds");
 	setServerMsg("Connection aborted: timeout");
-}, 10000);
+}, 10000);*/
 
-var waitConn = setTimeout(function() {
+socket.emit("join", username);
+/*var waitConn = setTimeout(function() {
 	socket.emit("join", username);
 	setServerMsg("Having trouble connecting to server. Aborting in 8...");
 	setTimeout(function(){setServerMsg("Having trouble connecting to server. Aborting in 7...");socket.emit("join", username, vid);},1000);
@@ -79,7 +69,7 @@ var waitConn = setTimeout(function() {
 	setTimeout(function(){setServerMsg("Having trouble connecting to server. Aborting in 3...");socket.emit("join", username, vid);},5000);
 	setTimeout(function(){setServerMsg("Having trouble connecting to server. Aborting in 2...");socket.emit("join", username, vid);},6000);
 	setTimeout(function(){setServerMsg("Having trouble connecting to server. Aborting in 1...");socket.emit("join", username, vid);},7000);
-}, 2000);
+}, 2000);*/
 
 var players = {};
 var player = {
@@ -89,6 +79,7 @@ var player = {
 	velX: 0,
 	velY: 0
 };
+var socketId;
 
 var keys = {};
 var usernames = {};
@@ -135,7 +126,7 @@ socket.on("client-pos", function(msg, thisPlayer, usernamesInfo){
 	player.x = thisPlayer.x;
 	player.y = thisPlayer.y;
 	player.rotation = thisPlayer.rotation;
-	player.username = thisPlayer.username;
+	player.username = usernamesInfo[socketId];
 	player.velX = thisPlayer.velX;
 	player.velY = thisPlayer.velY;
 	usernames = usernamesInfo;
@@ -157,15 +148,16 @@ socket.on("message", (text, username) => {
 		chat.innerHTML += '<b>' + username + "</b>: ";
 		chat.appendChild(img);
 	} else {
-		chat.innerHTML += marked(`**${username}**: ${text}`);
+		chat.innerHTML += marked.parse(`**${username}**: ${text}`);
 		chat.scrollTop = chat.scrollHeight;
 	}
 	console.log("%cRevieved chat message from server.", "color:green");
 });
 
-socket.on("ready", () => {
-	clearTimeout(failConn);
-	clearTimeout(waitConn);
+socket.on("ready", (id) => {
+	//clearTimeout(failConn);
+	//clearTimeout(waitConn);
+    socketId = id;
 	setServerMsg("Connected!");
 	setTimeout(function(){document.getElementById("srvmsg").style.display="hidden";},2000);
 });
@@ -267,7 +259,8 @@ function draw() {
 
 		for(var key of Object.keys(players)) {
 			ctx.save();
-			ctx.translate(players[key].x, players[key].y);
+			ctx.translate(players[key].x,
+                players[key].y);
 
 			ctx.textAlign = "center";
 			ctx.font = '30px Segoe UI';
