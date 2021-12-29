@@ -10,9 +10,7 @@ function getParameterByName( name ){
 		return "";
 	} else {
 		return decodeURIComponent(results[1].replace(/\+/g, " "));
-	}
-}
-
+	} }
 let vid = "";
 
 console.log("%cWelcome to StarKingdoms! Version: v0.3.1.2", "color:blue");
@@ -85,6 +83,11 @@ var keys = {};
 var usernames = {};
 var planets = {};
 var modules = [];
+var mousePos = {
+    x: 0,
+    y: 0
+};
+var buttons = [];
 
 const SCALE = 30;
 
@@ -223,6 +226,9 @@ function recalculatePositioning() {
 	canvas.style.backgroundPosition = newCanvasStr;
 }
 
+var camX = 0;
+var camY = 0;
+
 function draw() {
 	let intervalId = setInterval(() => {
 
@@ -231,8 +237,8 @@ function draw() {
 		ctx.setTransform(1, 0, 0, 1, 0, 0);
 		ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-		var camX = -player.x + canvas.width / 2
-		var camY = -player.y + canvas.height / 2
+		camX = -player.x + canvas.width / 2
+		camY = -player.y + canvas.height / 2
 		ctx.translate(camX, camY);
 
 		if (planets.earth == null) {
@@ -280,11 +286,22 @@ function draw() {
 			ctx.restore();
 		}
 
-		socket.emit("input", keys);
+		socket.emit("input", keys, mousePos, buttons);
 	}, 1000/60);
 }
 
 draw();
+
+document.onmousedown = (e) => {
+    buttons = e.buttons
+}
+
+document.onmousemove = (e) => {
+    mousePos = {
+        x: e.pageX + player.x - canvas.width / 2,
+        y: e.pageY + player.y - canvas.height / 2 
+    }
+}
 
 document.onkeydown = (e) => {
 	if(document.activeElement != document.getElementById('msg')) {
