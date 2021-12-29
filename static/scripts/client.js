@@ -285,8 +285,10 @@ function draw() {
 			ctx.drawImage(cargo, -25, -25, 50, 50) 
 			ctx.restore();
 		}
-
-		socket.emit("input", keys, mousePos, buttons);
+		socket.emit("input", keys, {
+            x:mousePos.x + player.x - canvas.width / 2,
+            y:mousePos.y + player.y - canvas.height / 2
+        }, buttons);
 	}, 1000/60);
 }
 
@@ -295,11 +297,14 @@ draw();
 document.onmousedown = (e) => {
     buttons = e.buttons
 }
+document.onmouseup = (e) => {
+    buttons = e.buttons
+}
 
 document.onmousemove = (e) => {
     mousePos = {
-        x: e.pageX + player.x - canvas.width / 2,
-        y: e.pageY + player.y - canvas.height / 2 
+        x: e.pageX,
+        y: e.pageY 
     }
 }
 
