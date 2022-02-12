@@ -37,7 +37,7 @@ function util_gethost() {
 	if (window.location.protocol.includes("file")) {
 		return "http://localhost:8443";
 	} else {
-		return window.location.protocol + "//" + window.location.host + ":8443";
+		return window.location.protocol + "//" + window.location.hostname + ":8443";
 	}
 }
 
