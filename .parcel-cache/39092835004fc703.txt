@@ -1,4 +1,4 @@
-4630
+4621
 41/home/core/starkingdoms-client/index.html1644628391597095897 0
 41/home/core/starkingdoms-client/.gitignore1644628764303778001 0
 50/home/core/starkingdoms-client/static/img/logo.jpg1644628391600429230 0
@@ -7,19 +7,14 @@
 48/home/core/starkingdoms-client/static/img/bg.png1644628391597095897 0
 55/home/core/starkingdoms-client/static/css/stylemain.css1644628391597095897 0
 41/home/core/starkingdoms-client/static/css1644628391597095897 1
-46/home/core/starkingdoms-client/dist/index.html1644628681787107941 0
-56/home/core/starkingdoms-client/static/css/styleindex.css1644628391597095897 0
-71/home/core/starkingdoms-client/dist/starkingdoms-client.3464ddca.js.map1644628626143772313 0
-51/home/core/starkingdoms-client/dist/bg.b005fc7d.png1644628681490441264 0
-57/home/core/starkingdoms-client/dist/main.f8330fa0.css.map1644628626093772311 0
-58/home/core/starkingdoms-client/dist/index.94a7f150.css.map1644628626093772311 0
-54/home/core/starkingdoms-client/dist/index.94a7f150.css1644628626090438978 0
-53/home/core/starkingdoms-client/dist/main.28112b6a.css1644628681787107941 0
-53/home/core/starkingdoms-client/dist/logo.d99d5526.jpg1644628681553774600 0
-56/home/core/starkingdoms-client/dist/main.b8a67f0b.js.map1644628626143772313 0
 59/home/core/starkingdoms-client/static/scripts/client.js.old1644628391603762564 0
-52/home/core/starkingdoms-client/dist/main.18ea6c52.js1644628681787107941 0
-56/home/core/starkingdoms-client/dist/favicon.812accb1.ico1644628681447107929 0
+46/home/core/starkingdoms-client/dist/index.html1644629252497131433 0
+56/home/core/starkingdoms-client/static/css/styleindex.css1644628391597095897 0
+71/home/core/starkingdoms-client/dist/starkingdoms-client.3464ddca.js.map1644629252500464768 0
+57/home/core/starkingdoms-client/dist/main.f8330fa0.css.map1644629252500464768 0
+58/home/core/starkingdoms-client/dist/index.94a7f150.css.map1644629252497131433 0
+54/home/core/starkingdoms-client/dist/index.94a7f150.css1644629252497131433 0
+56/home/core/starkingdoms-client/dist/main.b8a67f0b.js.map1644629252500464768 0
 88/home/core/starkingdoms-client/node_modules/postcss-normalize-timing-functions/README.md1644628478417999000 0
 90/home/core/starkingdoms-client/node_modules/postcss-normalize-timing-functions/LICENSE-MIT1644628478417999000 0
 91/home/core/starkingdoms-client/node_modules/postcss-normalize-timing-functions/src/index.js1644628478417999000 0
@@ -62,7 +57,7 @@
 75/home/core/starkingdoms-client/node_modules/caniuse-lite/data/regions/NF.js1644628477769000000 0
 75/home/core/starkingdoms-client/node_modules/caniuse-lite/data/regions/LB.js1644628477769000000 0
 75/home/core/starkingdoms-client/node_modules/caniuse-lite/data/regions/MD.js1644628477769000000 0
-55/home/core/starkingdoms-client/static/scripts/client.js1644628391603762564 0
+55/home/core/starkingdoms-client/static/scripts/client.js1644629114963792452 0
 75/home/core/starkingdoms-client/node_modules/caniuse-lite/data/regions/AW.js1644628477769000000 0
 75/home/core/starkingdoms-client/node_modules/caniuse-lite/data/regions/ZM.js1644628477769000000 0
 79/home/core/starkingdoms-client/node_modules/caniuse-lite/data/regions/alt-an.js1644628477769000000 0
@@ -160,7 +155,7 @@
 75/home/core/starkingdoms-client/node_modules/caniuse-lite/data/regions/AR.js1644628477769000000 0
 75/home/core/starkingdoms-client/node_modules/caniuse-lite/data/regions/CV.js1644628477769000000 0
 75/home/core/starkingdoms-client/node_modules/caniuse-lite/data/regions/BF.js1644628477769000000 0
-53/home/core/starkingdoms-client/dist/main.f8330fa0.css1644628626090438978 0
+53/home/core/starkingdoms-client/dist/main.f8330fa0.css1644629252497131433 0
 75/home/core/starkingdoms-client/node_modules/caniuse-lite/data/regions/AD.js1644628477769000000 0
 75/home/core/starkingdoms-client/node_modules/caniuse-lite/data/regions/IT.js1644628477769000000 0
 53/home/core/starkingdoms-client/static/img/favicon.ico1644628391597095897 0
@@ -313,7 +308,6 @@
 90/home/core/starkingdoms-client/node_modules/caniuse-lite/data/features/speech-synthesis.js1644628477769000000 0
 75/home/core/starkingdoms-client/node_modules/caniuse-lite/data/regions/MS.js1644628477769000000 0
 79/home/core/starkingdoms-client/node_modules/caniuse-lite/data/features/meter.js1644628477769000000 0
-56/home/core/starkingdoms-client/dist/main.18ea6c52.js.map1644628681787107941 0
 75/home/core/starkingdoms-client/node_modules/caniuse-lite/data/regions/NP.js1644628477769000000 0
 86/home/core/starkingdoms-client/node_modules/caniuse-lite/data/features/css-rrggbbaa.js1644628477769000000 0
 78/home/core/starkingdoms-client/node_modules/caniuse-lite/data/features/menu.js1644628477769000000 0
@@ -1076,7 +1070,6 @@
 65/home/core/starkingdoms-client/node_modules/color-convert/LICENSE1643067533877000000 0
 86/home/core/starkingdoms-client/node_modules/@swc/helpers/lib/_sliced_to_array_loose.js1644017654230999000 0
 73/home/core/starkingdoms-client/node_modules/@swc/helpers/lib/_defaults.js1644017654230999000 0
-54/home/core/starkingdoms-client/dist/index.c4289150.css1644628681793774608 0
 81/home/core/starkingdoms-client/node_modules/caniuse-lite/data/features/pointer.js1644628477769000000 0
 89/home/core/starkingdoms-client/node_modules/@swc/helpers/lib/_async_generator_delegate.js1644017654230999000 0
 75/home/core/starkingdoms-client/node_modules/caniuse-lite/data/regions/AM.js1644628477769000000 0
@@ -1206,7 +1199,7 @@
 63/home/core/starkingdoms-client/node_modules/yaml/browser/seq.js1643067544805999000 0
 65/home/core/starkingdoms-client/node_modules/yaml/browser/types.js1643067544805999000 0
 64/home/core/starkingdoms-client/node_modules/yaml/browser/util.js1643067544805999000 0
-53/home/core/starkingdoms-client/dist/logo.e1bc17d1.jpg1644628626137105646 0
+53/home/core/starkingdoms-client/dist/logo.e1bc17d1.jpg1644629252500464768 0
 82/home/core/starkingdoms-client/node_modules/yaml/browser/dist/warnings-df54cb69.js1643067544805999000 0
 80/home/core/starkingdoms-client/node_modules/@swc/helpers/lib/_super_prop_base.js1644017654230999000 0
 84/home/core/starkingdoms-client/node_modules/yaml/browser/dist/resolveSeq-492ab440.js1643067544805999000 0
@@ -1431,7 +1424,6 @@
 70/home/core/starkingdoms-client/node_modules/@parcel/watcher/src/shared1644628493110433425 1
 75/home/core/starkingdoms-client/node_modules/caniuse-lite/data/regions/SH.js1644628477769000000 0
 81/home/core/starkingdoms-client/node_modules/@parcel/resolver-default/package.json1644628476089999000 0
-57/home/core/starkingdoms-client/dist/main.28112b6a.css.map1644628681787107941 0
 133/home/core/starkingdoms-client/node_modules/@parcel/node-resolver-core/test/fixture/node_modules/package-module-fallback/package.json1644628477546000000 0
 91/home/core/starkingdoms-client/node_modules/@parcel/resolver-default/lib/DefaultResolver.js1644628476089999000 0
 72/home/core/starkingdoms-client/node_modules/@parcel/resolver-default/lib1644628489900433289 1
@@ -1984,7 +1976,7 @@
 74/home/core/starkingdoms-client/node_modules/@parcel/core/lib/assetUtils.js1644628474513000000 0
 75/home/core/starkingdoms-client/node_modules/css-what/lib/stringify.d.ts.map1644017654494999000 0
 71/home/core/starkingdoms-client/node_modules/ordered-binary/package.json1644017651882999000 0
-52/home/core/starkingdoms-client/dist/main.b8a67f0b.js1644628626143772313 0
+52/home/core/starkingdoms-client/dist/main.b8a67f0b.js1644629252497131433 0
 89/home/core/starkingdoms-client/node_modules/@parcel/core/lib/public/MutableBundleGraph.js1644628474513000000 0
 82/home/core/starkingdoms-client/node_modules/@parcel/core/lib/public/BundleGraph.js1644628474513000000 0
 92/home/core/starkingdoms-client/node_modules/terser/node_modules/source-map/lib/base64-vlq.js1643067545480000000 0
@@ -2549,7 +2541,7 @@
 89/home/core/starkingdoms-client/node_modules/@swc/helpers/lib/_class_private_method_set.js1644017654230999000 0
 56/home/core/starkingdoms-client/node_modules/chalk/source1644628488083766550 1
 73/home/core/starkingdoms-client/node_modules/json-source-map/.eslintrc.yml1644017644158999000 0
-51/home/core/starkingdoms-client/dist/bg.98baa6f3.png1644628626090438978 0
+51/home/core/starkingdoms-client/dist/bg.98baa6f3.png1644629252497131433 0
 91/home/core/starkingdoms-client/node_modules/csso/lib/restructure/prepare/processSelector.js1644017652732000000 0
 83/home/core/starkingdoms-client/node_modules/css-tree/lib/lexer/generic-an-plus-b.js1644017652928999000 0
 57/home/core/starkingdoms-client/node_modules/utility-types1644628487820433205 1
@@ -2857,7 +2849,7 @@
 126/home/core/starkingdoms-client/node_modules/@parcel/node-resolver-core/test/fixture/node_modules/package-alias-exclude/main.js1644628477546000000 0
 90/home/core/starkingdoms-client/node_modules/@parcel/package-manager/test/fixtures/packages1644628482873766331 1
 75/home/core/starkingdoms-client/node_modules/css-tree/lib/convertor/index.js1644017652928999000 0
-45/home/core/starkingdoms-client/static/scripts1644628391603762564 1
+45/home/core/starkingdoms-client/static/scripts1644629114963792452 1
 90/home/core/starkingdoms-client/node_modules/caniuse-lite/data/features/intl-pluralrules.js1644628477769000000 0
 88/home/core/starkingdoms-client/node_modules/caniuse-lite/data/features/object-observe.js1644628477769000000 0
 82/home/core/starkingdoms-client/node_modules/css-tree/lib/syntax/node/Combinator.js1644017652928999000 0
@@ -3149,7 +3141,7 @@
 92/home/core/starkingdoms-client/node_modules/@parcel/transformer-svg/node_modules/.bin/semver1644628494047100129 0
 64/home/core/starkingdoms-client/node_modules/@parcel/reporter-cli1644628484423766397 1
 89/home/core/starkingdoms-client/node_modules/@parcel/reporter-cli/test/CLIReporter.test.js1644628474513000000 0
-67/home/core/starkingdoms-client/dist/starkingdoms-client.3464ddca.js1644628626143772313 0
+67/home/core/starkingdoms-client/dist/starkingdoms-client.3464ddca.js1644629252497131433 0
 89/home/core/starkingdoms-client/node_modules/caniuse-lite/data/features/async-clipboard.js1644628477769000000 0
 92/home/core/starkingdoms-client/node_modules/@swc/helpers/src/_is_native_reflect_construct.js1644017654230999000 0
 83/home/core/starkingdoms-client/node_modules/@parcel/packager-svg/lib/SVGPackager.js1644628475628999000 0
@@ -3265,7 +3257,7 @@
 93/home/core/starkingdoms-client/node_modules/caniuse-lite/data/features/css-backdrop-filter.js1644628477769000000 0
 74/home/core/starkingdoms-client/node_modules/lines-and-columns/package.json1643067544865000000 0
 79/home/core/starkingdoms-client/node_modules/@parcel/utils/src/getCertificate.js1644628474979000000 0
-35/home/core/starkingdoms-client/dist1644628681803774610 1
+35/home/core/starkingdoms-client/dist1644629252500464768 1
 63/home/core/starkingdoms-client/node_modules/postcss/lib/list.js1644017649309000000 0
 83/home/core/starkingdoms-client/node_modules/postcss-minify-params/node_modules/.bin1644628494060433463 1
 78/home/core/starkingdoms-client/node_modules/@parcel/utils/src/openInBrowser.js1644628474979000000 0
@@ -3460,7 +3452,7 @@
 59/home/core/starkingdoms-client/node_modules/json5/README.md1643067541279000000 0
 93/home/core/starkingdoms-client/node_modules/@parcel/reporter-dev-server/lib/ServerReporter.js1644628475072999000 0
 71/home/core/starkingdoms-client/node_modules/domutils/lib/index.d.ts.map1644017654493999000 0
-45/home/core/starkingdoms-client/dist/main.html1644628681793774608 0
+45/home/core/starkingdoms-client/dist/main.html1644629252497131433 0
 92/home/core/starkingdoms-client/node_modules/lmdb/dependencies/lmdb-data-v1/libraries/liblmdb1644628493873766789 1
 71/home/core/starkingdoms-client/node_modules/css-what/lib/index.d.ts.map1644017654494999000 0
 70/home/core/starkingdoms-client/node_modules/@parcel/node-resolver-core1644628484397099730 1
@@ -4116,11 +4108,11 @@
 92/home/core/starkingdoms-client/node_modules/lmdb/prebuilds/linux-arm64/node.abi93.glibc.node1644118280223999000 0
 84/home/core/starkingdoms-client/node_modules/lmdb/prebuilds/win32-x64/node.abi72.node1644118280223999000 0
 64/home/core/starkingdoms-client/node_modules/nan/doc/node_misc.md1643067534015000000 0
-30/home/core/starkingdoms-client1644628764303778001 1
+30/home/core/starkingdoms-client1644629252480464766 1
 118/home/core/starkingdoms-client/node_modules/@parcel/node-resolver-core/test/fixture/node_modules/package-alias/main.js1644628477546000000 0
 84/home/core/starkingdoms-client/node_modules/lmdb/prebuilds/win32-x64/node.abi88.node1644118280223999000 0
 85/home/core/starkingdoms-client/node_modules/lmdb/prebuilds/win32-x64/node.abi102.node1644118280223999000 0
-56/home/core/starkingdoms-client/dist/favicon.224c2810.ico1644628626090438978 0
+56/home/core/starkingdoms-client/dist/favicon.224c2810.ico1644629252497131433 0
 67/home/core/starkingdoms-client/node_modules/@parcel/optimizer-image1644628494030433462 1
 88/home/core/starkingdoms-client/node_modules/lmdb/prebuilds/win32-x64/electron.abi99.node1644118280223999000 0
 79/home/core/starkingdoms-client/node_modules/postcss-calc/src/lib/convertUnit.js1644628478220000000 0
@@ -4373,7 +4365,6 @@
 79/home/core/starkingdoms-client/node_modules/postcss-svgo/node_modules/.bin/svgo1644628494063766797 0
 57/home/core/starkingdoms-client/node_modules/source-map-js1644628486960433170 1
 92/home/core/starkingdoms-client/node_modules/css-select/lib/pseudo-selectors/pseudos.d.ts.map1644017652721999000 0
-58/home/core/starkingdoms-client/dist/index.c4289150.css.map1644628681793774608 0
 71/home/core/starkingdoms-client/node_modules/css-select/lib/compile.d.ts1644017652721999000 0
 66/home/core/starkingdoms-client/node_modules/nan/nan_string_bytes.h1643067534015000000 0
 65/home/core/starkingdoms-client/node_modules/htmlnano/node_modules1644628494050433463 1
