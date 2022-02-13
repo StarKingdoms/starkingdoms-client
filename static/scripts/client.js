@@ -43,6 +43,8 @@ function util_gethost() {
 
 setServerMsg("Connecting...");
 
+var socket = io(util_gethost());
+
 socket.emit("join", username);
 
 socket.on('reconnecting', (tries) => {
