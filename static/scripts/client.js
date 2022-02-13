@@ -43,31 +43,16 @@ function util_gethost() {
 
 setServerMsg("Connecting...");
 
-var socket = io(util_gethost());
-
-/*var failConn = setTimeout(function() {
-        socket.disconnect();
-	var id = window.setTimeout(function() {}, 0);
-
-while (id--) {
-    window.clearTimeout(id); // will do nothing if no timeout with id is present
-}
-	console.log("Connection aborted after 10 seconds");
-	setServerMsg("Connection aborted: timeout");
-}, 10000);*/
-
 socket.emit("join", username);
-/*var waitConn = setTimeout(function() {
-	socket.emit("join", username);
-	setServerMsg("Having trouble connecting to server. Aborting in 8...");
-	setTimeout(function(){setServerMsg("Having trouble connecting to server. Aborting in 7...");socket.emit("join", username, vid);},1000);
-	setTimeout(function(){setServerMsg("Having trouble connecting to server. Aborting in 6...");socket.emit("join", username, vid);},2000);
-	setTimeout(function(){setServerMsg("Having trouble connecting to server. Aborting in 5...");socket.emit("join", username, vid);},3000);
-	setTimeout(function(){setServerMsg("Having trouble connecting to server. Aborting in 4...");socket.emit("join", username, vid);},4000);
-	setTimeout(function(){setServerMsg("Having trouble connecting to server. Aborting in 3...");socket.emit("join", username, vid);},5000);
-	setTimeout(function(){setServerMsg("Having trouble connecting to server. Aborting in 2...");socket.emit("join", username, vid);},6000);
-	setTimeout(function(){setServerMsg("Having trouble connecting to server. Aborting in 1...");socket.emit("join", username, vid);},7000);
-}, 2000);*/
+
+socket.on('reconnecting', (tries) => {
+	console.log("CONNECTION FAILED: " + tries + " failed connections so far");
+	setServerMsg("Having trouble connecting to server.");
+	if (tries == 3) {
+		setServerMsg("Server offline, connection aborted");
+		socket.disconnect();
+	}
+});
 
 var players = {};
 var player = {
