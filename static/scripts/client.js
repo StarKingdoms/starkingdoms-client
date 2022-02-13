@@ -43,8 +43,7 @@ function util_gethost() {
 
 setServerMsg("Connecting...");
 
-var socket = io(util_gethost());
-
+socket = io(util_gethost());
 socket.emit("join", username);
 
 socket.on('reconnecting', (tries) => {
@@ -111,23 +110,17 @@ while (id--) {
 }
 });
 
-socket.on("client-pos", function(msg, thisPlayer, usernamesInfo){
-	players = msg;
-	player.x = thisPlayer.x;
-	player.y = thisPlayer.y;
-	player.rotation = thisPlayer.rotation;
-	player.username = usernamesInfo[socketId];
-	player.velX = thisPlayer.velX;
-	player.velY = thisPlayer.velY;
-	usernames = usernamesInfo;
-});
-
-socket.on("planet-pos", (planetInfo) => {
-	planets = planetInfo;
-})
-
-socket.on("module-pos", (moduleInfo) => {
-	modules = moduleInfo;
+socket.on("data", function(data){
+	players = data.players.allPlayers,
+	player.x = data.players.thisPlayer.x;
+	player.y = data.players.thisPlayer.y;
+	player.rotation = data.players.thisPlayer.rotation;
+	player.username = data.players.usernames[socketId];
+	player.velX = data.players.thisPlayer.velX;
+	player.velY = data.players.thisPlayer.velY;
+	usernames = data.players.usernames;
+    planets = data.planets;
+    modules = data.modules;
 });
 
 let chat = document.getElementById("chat");
