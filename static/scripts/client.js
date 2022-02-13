@@ -42,7 +42,7 @@ function util_gethost() {
 }
 
 setServerMsg("Connecting...");
-
+socker = io(util_gethost());
 socket.emit("join", username);
 
 socket.on('reconnecting', (tries) => {
