@@ -148,6 +148,7 @@ socket.on("ready", (id) => {
     socketId = id;
 	setServerMsg("Connected!");
 	setTimeout(function(){document.getElementById("srvmsg").style.display="hidden";},2000);
+    draw();
 });
 
 var earth = new Image;
@@ -277,7 +278,6 @@ function draw() {
 	}, 1000/60);
 }
 
-draw();
 
 document.onmousedown = (e) => {
     buttons = e.buttons
